@@ -63,7 +63,7 @@ export default function Dashboard() {
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <CardContent className="p-6 relative">
-              <div className={`absolute inset-0 ${stat.gradient} opacity-5 group-hover:opacity-10 transition-opacity`} />
+              {/* gradient overlay removed to avoid color tint */}
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
                   <div className={`p-4 rounded-2xl ${stat.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
@@ -81,7 +81,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Upcoming Tasks */}
         <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-accent opacity-5 group-hover:opacity-10 transition-opacity" />
+          {/* gradient overlay removed to avoid color tint */}
           <CardHeader className="relative z-10">
             <CardTitle className="flex items-center gap-2 text-xl">
               <div className="p-2 rounded-lg bg-warning/10">
@@ -119,7 +119,7 @@ export default function Dashboard() {
 
         {/* Subject Progress */}
         <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-secondary opacity-5 group-hover:opacity-10 transition-opacity" />
+          {/* gradient overlay removed to avoid color tint */}
           <CardHeader className="relative z-10">
             <CardTitle className="flex items-center gap-2 text-xl">
               <div className="p-2 rounded-lg bg-success/10">
