@@ -28,16 +28,16 @@ export function AppSidebar() {
   const location = useLocation();
 
   return (
-    <Sidebar collapsible="icon" className="border-r border-sidebar-border">
+    <Sidebar collapsible="icon" className="border-r border-sidebar-border/50">
       <SidebarContent>
-        <div className="p-4 border-b border-sidebar-border">
+        <div className="p-6 border-b border-sidebar-border/50">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-sidebar-primary flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-sidebar-primary-foreground" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow-primary">
+              <BookOpen className="w-6 h-6 text-white" />
             </div>
             {open && (
               <div>
-                <h2 className="text-lg font-bold text-sidebar-foreground">StudyMate</h2>
+                <h2 className="text-xl font-display font-bold text-sidebar-foreground">StudyMate</h2>
                 <p className="text-xs text-sidebar-foreground/70">Tu organizador académico</p>
               </div>
             )}
