@@ -149,9 +149,8 @@ export default function Dashboard() {
       </div>
 
       {/* Quick Actions */}
-      <Card className="border-0 shadow-xl bg-gradient-hero overflow-hidden group hover:shadow-glow-primary transition-all duration-500 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-        <CardContent className="p-8 relative z-10">
+      <Card className="border-0 shadow-xl bg-gradient-hero overflow-hidden hover:shadow-glow-primary transition-all duration-500">
+        <CardContent className="p-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left space-y-2">
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-2">
